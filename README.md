@@ -1,3 +1,6 @@
+# youtube-summary
+유튜브 동영상의 주요 내용을 자동으로 요약해 제공하는 서비스입니다. <br>
+이 프로젝트는 캡스톤 디자인 수업에서 진행되었으며, 긴 영상의 핵심 내용을 빠르게 파악할 수 있도록 개발되었습니다.
 ## 개발 주간 기록
 - [1,2,3 주차](https://github.com/overwell24/youtube-summary/wiki/1%2C2%2C3-%EC%A3%BC%EC%B0%A8)
 - [9주차](https://github.com/overwell24/youtube-summary/wiki/9%EC%A3%BC%EC%B0%A8)
