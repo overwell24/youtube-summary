@@ -1,0 +1,251 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html {
+    background-color: #f8f8f8;
+}
+
+textarea {
+    height: 100%; /* 부모 요소의 높이에 맞춤 */
+    width: 100%; /* 부모 요소의 너비에 맞춤 */
+    resize: none; /* 사용자가 크기를 조절할 수 없도록 */
+}
+
+body {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 100vh; /* 전체 화면 높이 */
+    margin: 0; /* 기본 여백 제거 */
+}
+
+.button, .notbutton {
+    color: var(--White, #F8F8F8);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    display: inline-flex;
+    height: 82px;
+    padding: 0px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    background: var(--Primary, #F50202);
+    box-shadow: 0px 4px 10.4px 0px rgba(219, 121, 121, 0.48);
+    border: 1px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    color: var(--Black, #222);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.32px;
+    align-self: stretch;
+    border: 1px solid transparent;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+.button:hover {
+    background: var(--Primary, #a30909);
+}
+
+.container {
+    margin-left: 90px; /* 좌측 여백 90px */
+    margin-right: 90px;
+}
+
+h1 {
+    height: 33px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: var(--Black, #222);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px; /* 150% */
+    letter-spacing: -0.44px;
+}
+
+h2 {
+    color: #828282;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 139.286% */
+}
+
+p, ul, li {
+    color: var(--Black, #222);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 150% */
+    letter-spacing: -0.32px;
+    align-self: stretch;
+}
+
+h3 {
+    color: var(--Black, #222);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+    align-self: stretch;
+}
+
+.hero {
+    color: #DB0505;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122.5%;
+}
+
+.urllink {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: #FFF;
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.urllinkbackground {
+    display: flex;
+    width: 720px;
+    height: 50px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 16px;
+    background: var(--Primary, #F50202);
+    box-shadow: 0px 4px 5px 0px var(--Primary, #ffbaba);
+}
+
+.urlcontainer {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px; /* 원하는 여백 크기로 설정하세요 */
+}
+
+iframe {
+    background-color: #828282;
+}
+
+.contentcontainer {
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+    max-width: 1750px;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+.youtubeinfo {
+    max-height: 650px;
+    flex-grow: 1;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 11.6px 0px rgba(182, 175, 175, 0.31);
+}
+
+.result {
+    height: 70vw;
+    max-height: 500px;
+    flex-grow: 1;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 11.6px rgba(182, 175, 175, 0.31);
+    display: flex;
+    width: auto;            /* 자동 너비 */
+    max-width: 95vw;        /* 화면 너비의 95%로 제한 */
+    padding: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 1;         /* 축소 가능하게 설정 */
+    box-sizing: border-box; /* 패딩이 전체 너비에 포함되도록 설정 */
+    overflow: auto;
+}
+
+.result::-webkit-scrollbar {
+    width: 16px; /* 스크롤바 너비 */
+}
+
+.result::-webkit-scrollbar-track {
+    background: #FFF;        /* 트랙 배경색 */
+    border-radius: 8px;         /* 둥근 모서리 */
+    margin: 0 2px;              /* 트랙의 좌우 여백 */
+}
+
+.result::-webkit-scrollbar-thumb {
+    background-color: #cacdcf;  /* 스크롤바 색상 */
+    border-radius: 8px;         /* 스크롤바 둥근 모서리 */
+    border: 5px solid #FFF;  /* 스크롤바 주위에 여백 효과 */
+}
+
+.line {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    width: 257px;
+    height: 3px;
+    background: #F00;
+    margin: 0 10px;
+    vertical-align: middle; /* 수직 정렬 */
+
+}
+
+.youtubeicon {
+    z-index: -1;
+    width: 769.582px;
+    height: 769.582px;
+    transform: rotate(15deg);
+    flex-shrink: 0;
+    border-radius: 300px;
+    opacity: 0.3;
+    filter: blur(3.0999999046325684px);
+    background: linear-gradient(336deg, #DB0505 11.4%, #F00 96.83%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    bottom: -80px; 
+    right: -80px;
+    position: fixed; /* 고정 위치 설정 */
+}
+
+svg {
+    transform: rotate(-10deg);
+}
+
+ul {
+    list-style-type: disc; /* 기본 점 형태 */
+    padding-left: 20px;     /* 리스트 앞에 여백 추가 (필요시) */
+}

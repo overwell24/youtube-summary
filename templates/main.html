@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>딸깍</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}" />
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+        <script src="{{ url_for('static', filename='js/loading.js') }}" defer></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <h2>길어서 보기 힘들었던 영상</h2>
+            <p class="hero">딸 <span class="line"></span> 깍</p>
+            <h2>한 번에 요약할 수 있다면</h2>
+
+            <form class="urlcontainer" action="/result" onsubmit="handleSubmit(event)" accept-charset="utf-8" method="post" >
+                <div class="urllinkbackground">
+                    <input class="urllink" name="yt_link" placeholder="요약할 유튜브 링크를 입력해주세요.">
+                </div>
+                <input id="button" class="button" type="submit" value="요약하기"></input>
+            </form>
+
+        </div>
+
+        <div class="youtubeicon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="439" height="351" viewBox="0 0 439 351" fill="none">
+                <path d="M438.873 130.184C438.907 111.598 428.922 94.252 412.809 84.9067C383.658 68.0732 257.644 34.308 257.644 34.308C257.644 34.308 131.695 0.559998 97.968 0.545334C79.4223 0.534915 62.1023 10.5641 52.757 26.7248C35.9234 55.9622 18.309 121.7 18.309 121.7C18.309 121.7 0.694612 187.438 0.654224 221.175C0.62019 239.762 10.6052 257.107 26.7184 266.453C55.934 283.303 181.883 317.051 181.883 317.051C181.883 317.051 307.897 350.817 341.559 350.814C360.105 350.825 377.425 340.795 386.77 324.635C403.604 295.397 421.218 229.659 421.218 229.659C421.218 229.659 438.833 163.921 438.873 130.184Z" fill="white"/>
+                <path d="M163.274 225.491L284.181 192.94L195.748 104.297L163.274 225.491Z" fill="#FF0000"/>
+              </svg>
+            </div>
+    </body>
+</html>
