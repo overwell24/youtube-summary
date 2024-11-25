@@ -1,5 +1,5 @@
 # youtube-summary
-유튜브 동영상의 주요 내용을 자동으로 요약해주는 서비스입니다. <br>
+생성형 AI((LLM)을 활용한 유튜브 영상 요약 서비스입니다. <br>
 이 프로젝트는 캡스톤 디자인 수업에서 진행되었습니다.
 ## 개발 주간 기록
 - [1,2,3 주차](https://github.com/overwell24/youtube-summary/wiki/1%2C2%2C3-%EC%A3%BC%EC%B0%A8)
