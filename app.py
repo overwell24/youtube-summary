@@ -1,6 +1,10 @@
-from flask import Flask, render_template, redirect, url_for, request
-import youtube_summarizer as yt_summarizer
-import youtube_crawler as yt_crawler
+from flask import Flask, render_template, redirect, request
+import sys
+import os
+# 현재 스크립트 위치를 기준으로 services 폴더 경로 추가
+sys.path.append(os.path.join(os.path.dirname(__file__), 'services'))
+from services.youtube_api import YouTubeAPI
+from services.youtube_summary import YouTubeSummary
 import markdown
 
 app = Flask(__name__)
@@ -12,10 +16,15 @@ def main():
 @app.route('/result', methods=['post','get'])
 def summerize():
     if request.method == 'POST':
-        yt_url = request.form['yt_link']    
-        summary = yt_summarizer.get_summary_parallel(yt_url)
+        youtube_url = request.form['yt_link']
+        
+        youtube_api = YouTubeAPI()
+        youtube_summary = YouTubeSummary(youtube_url, youtube_api)
+
+        summary = youtube_summary.summarize()
         summary = markdown.markdown(summary)
-        title, view_count, published_at, channel_title = yt_crawler.get_video_details(yt_url)
+        
+        title, view_count, published_at, channel_title = youtube_api.get_youtube_details(youtube_url)
 
         data = {
             "summary": summary,
@@ -23,7 +32,7 @@ def summerize():
             "view_count": view_count,
             "published_at": published_at,
             "channel_title": channel_title,
-            "video_id": yt_crawler.extract_video_id(yt_url) 
+            "video_id": youtube_api.extract_video_id(youtube_url) 
         }
         return render_template('result.html', **data)
     
